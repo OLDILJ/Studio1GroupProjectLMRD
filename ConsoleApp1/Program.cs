@@ -12,7 +12,7 @@ namespace ConsoleApp1
         {
             int labselect = 0;
             Console.WriteLine("Select Lab");
-            labselect = Console.ReadLine();
+            labselect = Convert.ToInt32(Console.ReadLine());
             switch (labselect)
             {
                 case 0:
