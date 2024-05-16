@@ -190,11 +190,67 @@ namespace ConsoleApp1
             }
             void lab_5()
             {
+                string temp;
+                char guess;
+                int guessconverted;
 
+                Console.WriteLine("Welcome Player, to the game of guessing the side of the coin");
+                Console.WriteLine("Please decide one among the two Head/Tails please input he alphabet h for heads and t for tails.");
+                temp = Console.ReadLine();
+                guess = Convert.ToChar(temp);
+                Random rand = new Random();
+                int computerguess = rand.Next(2);
+                if (guess == 'h')
+                {
+                    guessconverted = 0;
+                }
+                else
+                {
+                    guessconverted = 1;
+                }
+
+
+
+                Console.WriteLine("Flipping the coin.....");
+                Thread.Sleep(000);
+                if (computerguess == 0)
+                {
+                    Console.WriteLine("flip result is heads.");
+                }
+                else
+                {
+                    Console.WriteLine("flip result is tails.");
+                }
+
+
+                if (guessconverted == computerguess)
+                {
+                    Console.WriteLine("WIN!");
+                    Console.Beep(10050, 1000);
+                    Console.Beep(10000, 1000);
+                    Console.Beep(10000, 1000);
+                }
+                else
+                {
+                    Console.WriteLine("Lose!");
+                }
+                Console.ReadLine();
             }
             void lab_6()
             {
 
+                string name, temp;
+                int height, width, area;
+                Console.WriteLine("WHAT'S YOUR NAME?");
+                name = Console.ReadLine();
+                Console.WriteLine("What's the height of the rectangle?");
+                temp = Console.ReadLine();
+                height = Convert.ToInt32(temp);
+                Console.WriteLine("What's the width of the rectangle?");
+                temp = Console.ReadLine();
+                width = Convert.ToInt32(temp);
+                area = height * width;
+                Console.WriteLine($"Hello {name}, The total Area of the Rectangle is {area}.");
             }
             void lab_7()
             {
