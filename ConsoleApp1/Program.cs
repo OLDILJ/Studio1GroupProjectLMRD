@@ -17,6 +17,10 @@ namespace ConsoleApp1
             Console.WriteLine("2. Sample Text Replace Please");
             Console.WriteLine("3. Day and Hour Calculator");
             Console.WriteLine("4. Robot Rob Counter");
+            Console.WriteLine("5. Sample Text Replace Please");
+            Console.WriteLine("6. Sample Text Replace Please");
+            Console.WriteLine("7. Sample Text Replace Please");
+            Console.WriteLine("8. Sample Text Replace Please");
             labselect = Convert.ToInt32(Console.ReadLine());
             switch (labselect)
             {
@@ -31,6 +35,18 @@ namespace ConsoleApp1
                     break;
                 case 4:
                     Lab_4();
+                    break;
+                case 5:
+                    lab_5();
+                    break;
+                case 6:
+                    lab_6();
+                    break;
+                case 7:
+                    lab_7();
+                    break;
+                case 8:
+                    lab_8();
                     break;
             }
 
@@ -172,8 +188,22 @@ namespace ConsoleApp1
                 Console.ReadLine();
 
             }
+            void lab_5()
+            {
 
+            }
+            void lab_6()
+            {
 
+            }
+            void lab_7()
+            {
+
+            }
+            void lab_8()
+            {
+
+            }
         }
 
     }
