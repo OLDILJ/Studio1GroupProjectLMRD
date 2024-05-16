@@ -42,6 +42,30 @@ namespace ConsoleApp1
             void Lab_2()
             {
                 Console.WriteLine("Lab2");
+                List<int> scores = new List<int>() { 78, 89, 92, 65, 70, 85, 92, 78, 93, 80 };
+
+                int highestScore = 0;
+                foreach (var score in scores)
+                {
+                    if (score > highestScore)
+                    {
+                        highestScore = score;
+                    }
+                }
+                Console.WriteLine("Highest Score: " + highestScore);
+
+                List<int> noDuplicates = new List<int>();
+                foreach (var score in scores)
+                {
+                    if (!noDuplicates.Contains(score))
+                    {
+                        noDuplicates.Add(score);
+                    }
+                }
+                foreach (var score in noDuplicates)
+                {
+                    Console.WriteLine(score);
+                }
 
             }
             void Lab_3()
