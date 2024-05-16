@@ -15,7 +15,7 @@ namespace ConsoleApp1
             Console.WriteLine("Select Lab");
             Console.WriteLine("1. Sample Text Replace Please");
             Console.WriteLine("2. Sample Text Replace Please");
-            Console.WriteLine("3. Sample Text Replace Please");
+            Console.WriteLine("3. Day and Hour Calculator");
             Console.WriteLine("4. Robot Rob Counter");
             labselect = Convert.ToInt32(Console.ReadLine());
             switch (labselect)
