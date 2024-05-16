@@ -36,7 +36,52 @@ namespace ConsoleApp1
 
             void Lab_1()
             {
-                Console.WriteLine("Lab1");
+                string temp;
+                int number, turns = 6;
+                char userinput = '\0';
+                bool close = false;
+                Random random = new Random();
+                int computerchosen = random.Next(1, 101);
+
+                Console.WriteLine($"random number={computerchosen}");
+
+
+                Console.WriteLine("Welcome to The game Player!");
+                Console.WriteLine("The computer has chosen a number between 1-100.");
+                Console.WriteLine("...............................................");
+                Console.WriteLine("Goodluck");
+                do
+                {
+                    do
+                    {
+                        Console.WriteLine("Guess a number from 1-100.");
+                        number = Convert.ToInt32(Console.ReadLine());
+                        turns--;
+                        if (number > computerchosen)
+                        {
+                            Console.WriteLine("Your number is high");
+                        }
+
+                        else if (number < computerchosen)
+                        {
+                            Console.WriteLine("Your number is low");
+                        }
+
+                        else
+                        {
+                            Console.WriteLine("You guessed it right");
+                            close = true;
+                        }
+                        Console.WriteLine($"you have {turns} turns left..");
+                    }
+                    while (turns > 0 && close != true);
+
+                    Console.WriteLine("Please Enter your answer: y or n");
+                    temp = Console.ReadLine();
+                    userinput = Convert.ToChar(temp);
+                } while ((userinput != 'y') && (userinput != 'n'));
+                Console.WriteLine("Thank you");
+                Console.ReadLine();
 
             }
             void Lab_2()
