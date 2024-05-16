@@ -42,7 +42,15 @@ namespace ConsoleApp1
             void Lab_3()
             {
                 Console.WriteLine("Lab3");
-
+                string temp;
+                int days, hours, totalhours;
+                Console.WriteLine("How many hours would you like to be converted to days and hours");
+                temp = Console.ReadLine();
+                totalhours = Convert.ToInt32(temp);
+                days = totalhours / 24;
+                hours = totalhours % 24;
+                Console.WriteLine($"That is {days} Days and {hours} Hours");
+                Console.ReadLine();
             }
             void Lab_4()
             {
