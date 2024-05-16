@@ -198,7 +198,20 @@ namespace ConsoleApp1
             }
             void lab_7()
             {
+                int length = 0;
+                Console.WriteLine("Please enter your message.");
+                string message = Console.ReadLine();
+                foreach (char i in message)
+                {
+                    length++;
+                }
+                if (message.Contains("e"))
+                {
+                    Console.WriteLine("The most common letter in the English language, 'e' is in your message.");
+                }
 
+                Console.WriteLine($"Your message contains {length} characters");
+                Console.ReadLine();
             }
             void lab_8()
             {
